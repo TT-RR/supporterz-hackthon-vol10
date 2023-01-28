@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class loginValidate extends StatefulWidget {
   const loginValidate({Key? key}) : super(key: key);
 
@@ -7,6 +8,7 @@ class loginValidate extends StatefulWidget {
   State<loginValidate> createState() => _loginValidateState();
 }
 
+// ignore: camel_case_types
 class _loginValidateState extends State<loginValidate> {
   bool _isObscure = true;
 
@@ -16,7 +18,7 @@ class _loginValidateState extends State<loginValidate> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('null-safe'),
+        title: const Text('JboyApp'),
         backgroundColor: Colors.blue,
       ),
       body: Center(
@@ -42,6 +44,25 @@ class _loginValidateState extends State<loginValidate> {
                     ),
                   ),
                 ),
+
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                  child: TextFormField(
+
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'メールアドレスが入力されていません!';
+                      }
+                      return null;
+                    },
+                    decoration: const InputDecoration(
+                      labelText: 'メールアドレスを入力してください',
+                    ),
+                  ),
+                ),
+
+
                 Padding(
                   padding:
                   const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
@@ -66,22 +87,24 @@ class _loginValidateState extends State<loginValidate> {
                             })),
                   ),
                 ),
-
                 Center(
                   child: ElevatedButton(
                       onPressed: () {
                         if (_formkey.currentState!.validate()) {
                           ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text('Processing Data')),
+                            const SnackBar(content: Text('Processing Data')),
                           );
                         }
-                      }, child: Text('ログイン')),
+                      }, child: const Text('登録')),
                 ),
               ],
             ),
           ),
         ),
       ),
+
+
     );
+
   }
 }
