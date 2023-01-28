@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twitter/view/start_up/login_page.dart';
 import 'package:twitter/view/time_line/time_line_page.dart';
 
 void main() {
