@@ -11,7 +11,7 @@ class _TimeLinePageState extends State<TimeLinePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('タイムラインページ'),
+      body: Center(child: Text('タイムラインページ')),
     );
   }
 }
