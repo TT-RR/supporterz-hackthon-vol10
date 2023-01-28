@@ -1,9 +1,13 @@
 class User {
-  final String fullName;  //ユーザーの名前
-  final String imageUrl;  //ユーザーのアイコン
-  final String userName;  //ニックネーム
+   String id;
+   String selfIntroduction;
+   String fullName;  //ユーザーの名前
+   String imageUrl;  //ユーザーのアイコン
+   String userName;  //ニックネーム
 
   User(
+      this.id,
+      this.selfIntroduction,
       this.fullName,
       this.userName,
       this.imageUrl,

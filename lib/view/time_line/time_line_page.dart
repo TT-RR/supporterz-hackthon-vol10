@@ -5,7 +5,6 @@ import 'package:twitter/model/post.dart';
 
 
 class NewsFeedPage1 extends StatelessWidget {
-  const NewsFeedPage1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -173,21 +172,29 @@ class FabExample extends StatelessWidget {
 
 final List<User> _users = [
   User(
+    "1",
+    "こんにちわ",
     "John Doe",
     "john_doe",
     "https://picsum.photos/id/1062/80/80",
   ),
   User(
+    "2",
+    "こんにちわ",
     "Jane Doe",
     "jane_doe",
     "https://picsum.photos/id/1066/80/80",
   ),
   User(
+    "3",
+    "こんにちわ",
     "Jack Doe",
     "jack_doe",
     "https://picsum.photos/id/1072/80/80",
   ),
   User(
+    "4",
+    "こんにちわ",
     "Jill Doe",
     "jill_doe",
     "https://picsum.photos/id/133/80/80",
