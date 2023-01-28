@@ -1,4 +1,7 @@
+
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:twitter/view/time_line/time_line_page.dart';
 
 class loginValidate extends StatefulWidget {
   const loginValidate({Key? key}) : super(key: key);
@@ -67,9 +70,30 @@ class _loginValidateState extends State<loginValidate> {
                   ),
                 ),
 
+                SizedBox(height: 10),
+                RichText(text: TextSpan(
+                  style: TextStyle(color: Colors.black),
+                  children: [
+                    TextSpan(text: 'アカウントを作成していない方は'),
+                    TextSpan(text: 'こちらへ',
+                      style: TextStyle(color: Colors.blue),
+                      recognizer: TapGestureRecognizer()..onTap = (){
+                          print('アカウント作成');
+                        }
+                    ),
+                  ],
+                  ),
+                ),
+
+                SizedBox(height: 10),
                 Center(
                   child: ElevatedButton(
                       onPressed: () {
+                        Navigator.pushReplacement(
+                            context, MaterialPageRoute(
+                            builder: (context) => NewsFeedPage1()
+                        ));
+
                         if (_formkey.currentState!.validate()) {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(content: Text('Processing Data')),
