@@ -1,16 +1,34 @@
-# twitter
+# twitterみたいなもの
 
-A new Flutter project.
+## ファイル構成
+ - account
+   (アカウント関連)
 
-## Getting Started
+   - account_page(実際にアカウントページを表示する)
+   
+ - time_line
+　　(投稿画面関連)
 
-This project is a starting point for a Flutter application.
+   - time_line_page(実際に投稿ページを表示する)
 
-A few resources to get you started if this is your first Flutter project:
+## 使いかた
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    1.リポジトリをクローンする
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    2.テキストエディタで クローンしたフォルダーを開く
+
+    3.自分のブランチ作成
+
+    4.中身を作成していく
+
+    5.以下のコマンドを実行する
+   
+    git add .
+    
+    git commit -m "メッセージ"
+    
+    git push origin ブランチ名 -u
+    
+    6.GitHub上でプルリクエストを作成する
+    
+    7.プルリクエストがマージされるまで待つ
