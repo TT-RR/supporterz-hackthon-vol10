@@ -3,9 +3,9 @@
 ## ファイル構成(ファイル追加予定)
  - model
  
-  - account.dart(アカウントクラス定義)
+  　- account.dart(アカウントクラス定義)
   
-  - post.dart(投稿クラス定義)
+  　- post.dart(投稿クラス定義)
   
  - view(実際に見るページ)
  
