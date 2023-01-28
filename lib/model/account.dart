@@ -1,11 +1,11 @@
-class User {
+class Account {
    String id;
    String selfIntroduction;
    String fullName;  //ユーザーの名前
    String imageUrl;  //ユーザーのアイコン
    String userName;  //ニックネーム
 
-  User(
+  Account(
       this.id,
       this.selfIntroduction,
       this.fullName,

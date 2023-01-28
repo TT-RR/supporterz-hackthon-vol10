@@ -4,7 +4,7 @@ import '../view/time_line/time_line_page.dart';
 class FeedItem {
   final String? content;
   final String? imageUrl;
-  final User user;
+  final Account user;
   final int commentsCount;
   final int likesCount;
   final int retweetsCount;
