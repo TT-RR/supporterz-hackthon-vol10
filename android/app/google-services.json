@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "489454201690",
+    "project_id": "supporterz-hackthon-vol10",
+    "storage_bucket": "supporterz-hackthon-vol10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489454201690:android:612ef34b7cb17c5b986163",
+        "android_client_info": {
+          "package_name": "com.example.twitter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489454201690-r877ist7or6mu61o5sim8btenv7nnn1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE63J-AR_aYy7_t60BFyy3tzQ9j8wvEPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489454201690-r877ist7or6mu61o5sim8btenv7nnn1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

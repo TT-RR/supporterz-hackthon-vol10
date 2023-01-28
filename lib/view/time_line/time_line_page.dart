@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:twitter/model/account.dart';
+import 'package:twitter/model/post.dart';
+
 
 class NewsFeedPage1 extends StatelessWidget {
   const NewsFeedPage1({Key? key}) : super(key: key);
@@ -145,34 +148,28 @@ class _ActionsRow extends StatelessWidget {
   }
 }
 
-class FeedItem {
-  final String? content;
-  final String? imageUrl;
-  final User user;
-  final int commentsCount;
-  final int likesCount;
-  final int retweetsCount;
+class FabExample extends StatelessWidget {
+  const FabExample({super.key});
 
-  FeedItem(
-      {this.content,
-        this.imageUrl,
-        required this.user,
-        this.commentsCount = 0,
-        this.likesCount = 0,
-        this.retweetsCount = 0});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('FloatingActionButton Sample'),
+      ),
+      body: const Center(child: Text('Press the button below!')),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Add your onPressed code here!
+        },
+        backgroundColor: Colors.blue,
+        child: const Icon(Icons.mode_edit),
+      ),
+    );
+  }
 }
 
-class User {
-  final String fullName;
-  final String imageUrl;
-  final String userName;
 
-  User(
-      this.fullName,
-      this.userName,
-      this.imageUrl,
-      );
-}
 
 final List<User> _users = [
   User(
