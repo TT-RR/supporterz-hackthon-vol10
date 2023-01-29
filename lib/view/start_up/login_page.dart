@@ -2,6 +2,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:twitter/utils/authentication.dart';
+import 'package:twitter/view/screen.dart';
 import 'package:twitter/view/start_up/create_account_page.dart';
 import 'package:twitter/view/time_line/time_line_page.dart';
 
@@ -82,18 +83,25 @@ class _loginValidateState extends State<loginValidate> {
                   style: TextStyle(color: Colors.black),
                   children: [
                     TextSpan(text: 'アカウントを作成していない方は'),
-                    TextSpan(text: 'こちらへ',
-                      style: TextStyle(color: Colors.blue),
-                      recognizer: TapGestureRecognizer()..onTap = (){
-                        Navigator.pushReplacement(
-                            context, MaterialPageRoute(
-                            builder: (context) => CreateAccount()
-                        ));
-                        }
-                    ),
                   ],
                   ),
                 ),
+
+                 SizedBox(height: 10),
+                 Center(
+                   child: ElevatedButton(
+                    onPressed: () async {
+                      var result = await Navigator.push(// ・・・①
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CreateAccount(),
+                        ),
+                      );
+                      print("MyHomePage result: $result");
+                    },
+                    child: Text("こちらへ"),
+                ),
+                 ),
 
                 //ログインボタン
                 SizedBox(height: 10),
