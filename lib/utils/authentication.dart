@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
 class Authentication{
-  //オーセンティケイション
   static final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   static User? currentFirebaseUser;
 
@@ -34,9 +33,4 @@ class Authentication{
     }
   }
 }
-//createpageで
-//async
-// var result = await Authentication.signUp(email: emailController.text,password: passController.text);
-//if(result == true){
-//  Navigator.pop(context);
-//}
+
